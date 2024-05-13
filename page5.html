@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<head>
+    <title>Loona Archive</title>
+    <link rel="stylesheet" href="styleformini.css">
+    <style>
+        .item1 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+
+        .grid-container {
+  display: grid;
+  height: 400px;
+  align-content:center;
+  grid-template-columns: min-content;
+  gap: 10px;
+  background-color:#ffe8fe ;
+  padding: 15px;
+  flex-wrap:wrap;
+ 
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  align-items: stretch;
+  text-align: center;
+  padding: 20px ;
+  font-size: 30px;
+  align-items:center;
+  font-size: 15px;
+  text-align: left;
+  flex-shrink: 7;
+}
+        </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image01.gif" alt="Logo">
+        </div>
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            
+          </form><nav>
+            <ul>
+                <li><a href="page1.html"><-Back</a></li>
+                <li><a href="page6.html">Next-></a></li>
+            </ul> 
+        </nav>
+    </header>
+    <section class="main-content">
+        <body style="background-color: #ffe8fe;">
+        <br><br><br><div class="grid-container">
+            <div class="grid-item item1" style="font-family: serif,georgia; text-align: center;" ><h1>Masterlink of theories</h1></div>
+            <div ><img width="400px;" src="alg1.png"><br><p style="font-size: medium; text-align: center;"><a href="page2.html"><b>The mobius strip theory</b></a></p></div>
+            <div ><img width="400px;" src="artms.png"><br><p style="font-size: medium; text-align: center;"><a href="page3.html"></a><b>The time loop theory</b></a></p></div>
+            <div ><img width="400px;" src="edily1.png"><br><p style="font-size: medium; text-align: center;"><a href="page4.html"></a><b>Who killed vivi ?</b></a></p></div>
+            <form action="/submit_theory" method="POST">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="theory">Theory:</label><br>
+                <textarea id="theory" name="theory" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit">
+                  </form>
+        </p></div>  
+        </body>
+        </section>
+        </html>

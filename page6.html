@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<head>
+    <title>Loona Archive</title>
+    <link rel="stylesheet" href="styleformini.css">
+    <style>
+        .button {
+  background-color: #4a3b4a; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+        .item1 {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+        .grid-container {
+  display: grid;
+  height: 400px;
+  align-content:center;
+  grid-template-columns: min-content;
+  gap: 10px;
+  background-color:#ffe8fe ;
+  padding: 15px;
+  flex-wrap:wrap;
+ 
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  align-items: stretch;
+  text-align: center;
+  padding: 20px ;
+  font-size: 30px;
+  align-items:center;
+  font-size: 15px;
+  text-align:left;
+  flex-shrink: 7;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none; /* Hidden by default */
+  }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image01.gif" alt="Logo">
+        </div>
+        <h1 style="text-align:center;">THE LOONΔVERSE</h1>
+        <nav>
+            <ul>
+                <li><a href="page5.html"><-Back</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-content">
+        <body>
+        <br>
+        <div class="grid-container">
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Theory Submission Form</title>
+          </head>
+          <body>
+            <div id="popup" class="popup">
+              <p>ADDED TO CART !!</p>
+            </div>
+          
+            <div class="grid-item item1" style="font-family: serif,georgia; text-align: center;" ><h1>Special Merchandise(in stock)</h1></div>
+            <div ><img width="400px;" src="blueclips.jpeg"><br><p style="font-size: medium; text-align: center;"><b>soul-clips</b></p><br><button class="button" id="addToCartBtn">Place order</button></div>
+            <div ><img width="400px;" src="bracelet.jpeg"><br><p style="font-size: medium; text-align: center;"><b>soul-bracelet</b></p><br><button class="button" id="addToCartBtn">Place order</button></div>
+            <div ><img width="400px;" src="chuucardigan.jpeg"><br><p style="font-size: medium; text-align: center;"><b>vivi sweater</b></p><br><button class="button" id="addToCartBtn">Place order</button></div>
+          </p></div>  <br><br><br><br><br>
+          <div class="grid-container">
+            <div class="grid-item item1" style="font-family: serif,georgia; text-align: center;" ><h1>Fan favourites</h1></div>
+            <div ><img width="400px;" src="yyxy.jpeg"><br><p style="font-size: medium; text-align: center;"><b>YYXY shirt</b></p><br><button class="button" id="addToCartBtn">Place order</button></div>
+            <div ><img width="400px;" src="pinkshirt.jpeg"><br><p style="font-size: medium; text-align: center;"><b>Pink Loona shirt</b></p><br><button class="button" id="addToCartBtn">Place order</button></div>
+            <div ><img width="400px;" src="notebook.jpeg"><br><p style="font-size: medium; text-align: center;"><b>CHVI notebook</b></p><br><button class="button" id="addToCartBtn">Place order</button></div>
+        
+          </p></div>  
+          <script>
+            function showPopup() {
+              var popup = document.getElementById('popup');
+              popup.style.display = 'block';
+              
+              setTimeout(function(){
+                popup.style.display = 'none';
+              }, 2000);
+            }
+        
+           
+            document.getElementById('addToCartBtn').addEventListener('click', function() {
+              
+              showPopup();
+            });
+          </script>
+        </body>
+        </section>
+        </html>
